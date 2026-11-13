@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="FlowPilot AI creates practical websites, business tools and automation plans tailored to small businesses. Durham, England.">
+<meta name="theme-color" content="#071322">
+<title>FlowPilot AI — Your business. Smarter. Simpler.</title>
+<style>
+:root{--bg:#071322;--panel:#0e2035;--panel2:#122943;--line:#29415d;--txt:#f4f8ff;--muted:#b5c5d8;--blue:#5aa9ff;--cyan:#5fe0d0;--green:#8de3b0;--shadow:0 20px 60px #0005}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}.brand{font-weight:900;letter-spacing:.12em;font-size:1.1rem}.brand b{color:var(--cyan)}.links{display:flex;gap:23px}.links a{text-decoration:none;color:var(--muted);font-size:.92rem}.links a:hover{color:white}.menu{display:none;background:none;color:white;border:1px solid var(--line);border-radius:8px;padding:8px}
+.hero{position:relative;overflow:hidden;padding:86px 0 76px;background:radial-gradient(ellipse at 80% 18%,#17416c 0,transparent 40%),radial-gradient(ellipse at 10% 85%,#123b45 0,transparent 34%),linear-gradient(140deg,#071322,#0b1b2d)}
+.hero:after{content:"";position:absolute;width:400px;height:400px;border:1px solid #5aa9ff22;border-radius:50%;right:-150px;bottom:-260px;box-shadow:0 0 0 35px #5aa9ff0b,0 0 0 70px #5aa9ff08}
+.eyebrow{color:var(--cyan);font-size:.77rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.hero h1{font-size:clamp(2.8rem,7vw,5.5rem);line-height:1.02;letter-spacing:-.045em;max-width:850px;margin:18px 0}.hero h1 span{background:linear-gradient(90deg,var(--blue),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:1.17rem;color:var(--muted);max-width:690px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:10px;padding:13px 19px;background:linear-gradient(100deg,var(--blue),var(--cyan));color:#061322;font-weight:850;text-decoration:none;cursor:pointer}.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}.btn.alt{background:transparent;border:1px solid var(--line);color:var(--txt)}.pills{display:flex;gap:9px;flex-wrap:wrap}.pill{border:1px solid #ffffff20;background:#ffffff08;border-radius:30px;padding:6px 12px;color:var(--muted);font-size:.84rem}
+.offer{margin-top:-1px;background:linear-gradient(90deg,#123d4a,#12305a);border-top:1px solid #5fe0d055;border-bottom:1px solid #5fe0d055;padding:17px 0}.offerin{display:flex;align-items:center;justify-content:space-between;gap:18px}.offer strong{color:var(--cyan)}.offer p{margin:0;color:#e6f2ff}.offer a{white-space:nowrap;font-weight:800;color:var(--cyan);text-decoration:none}
+section{padding:72px 0}.section-head{max-width:720px;margin-bottom:30px}h2{font-size:clamp(2rem,4.5vw,3rem);line-height:1.12;letter-spacing:-.03em;margin:9px 0 13px}h3{margin:0 0 8px;line-height:1.25}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(150deg,#11243a,#0c1b2e);border:1px solid var(--line);border-radius:17px;padding:23px;box-shadow:var(--shadow)}.card p{color:var(--muted);margin:8px 0 0}.ico{font-size:1.65rem;margin-bottom:10px}.industries{background:#0a1929}.industry{border:1px solid var(--line);border-radius:13px;padding:17px;background:#0e2035}.industry b{display:block}.industry span{font-size:.9rem;color:var(--muted)}
+.builder{background:radial-gradient(ellipse at 90% 0,#14345a,transparent 45%),#091827}.builderbox{display:grid;grid-template-columns:1.15fr .85fr;gap:20px;align-items:start}.formcard{background:#0d1e31;border:1px solid var(--line);border-radius:18px;padding:25px}.field{margin:15px 0}.field label{display:block;font-weight:750;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;padding:12px 13px;border:1px solid var(--line);border-radius:9px;background:#071525;color:var(--txt);font:inherit}.field textarea{min-height:95px;resize:vertical}.choices{display:grid;grid-template-columns:1fr 1fr;gap:9px}.choice{display:flex;gap:9px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:10px;background:#0a1929;color:var(--muted);font-size:.91rem}.choice input{width:auto;margin-top:5px;accent-color:var(--cyan)}.result{position:sticky;top:18px}.result .big{font-size:2.8rem;line-height:1.1;font-weight:900;color:var(--cyan);margin:12px 0}.result small{color:var(--muted)}.line{height:1px;background:var(--line);margin:17px 0}.result ul{padding-left:19px;color:var(--muted)}.result li{margin:7px 0}.tag{display:inline-block;border-radius:30px;background:#163d3c;color:var(--cyan);padding:5px 10px;font-size:.78rem;font-weight:800}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.step{background:#0e2035;border:1px solid var(--line);border-radius:14px;padding:18px}.num{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#173b60;color:var(--cyan);font-weight:900;margin-bottom:13px}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.price{font-size:2rem;font-weight:900;margin:10px 0}.price span{font-size:.86rem;font-weight:500;color:var(--muted)}.highlight{border-color:var(--blue);box-shadow:0 0 0 1px #5aa9ff33, var(--shadow)}.fine{font-size:.82rem;color:var(--muted)}
+.faq details{border-bottom:1px solid var(--line);padding:15px 0}.faq summary{font-weight:800;cursor:pointer}.faq p{color:var(--muted);max-width:800px}
+.contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:25px}.footer{border-top:1px solid var(--line);padding:27px 0;color:var(--muted);font-size:.88rem}.footerin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.notice{border-left:3px solid var(--cyan);padding:12px 15px;background:#0c2630;border-radius:0 9px 9px 0;color:var(--muted);font-size:.9rem}
+@media(max-width:800px){.grid,.pricing{grid-template-columns:1fr 1fr}.builderbox,.contact{grid-template-columns:1fr}.result{position:static}.steps{grid-template-columns:1fr 1fr}.links{display:none;position:absolute;top:65px;left:4%;right:4%;padding:15px;background:#10243a;border:1px solid var(--line);border-radius:12px;z-index:9;flex-direction:column}.links.open{display:flex}.menu{display:block}.offerin{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.grid,.pricing,.steps{grid-template-columns:1fr}.choices{grid-template-columns:1fr}.hero{padding:62px 0 55px}.formcard{padding:18px}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+ <a class="brand" href="#" style="text-decoration:none">FLOWPILOT <b>AI</b></a>
+ <nav class="links" id="navlinks"><a href="#services">What we build</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#builder">Build your plan</a><a href="#contact">Contact</a></nav>
+ <button class="menu" id="menu" aria-label="Open navigation">☰</button>
+</header>
+<main>
+<section class="hero">
+ <div class="wrap">
+  <div class="eyebrow">AI-powered ideas · Practical business tools · Durham, England</div>
+  <h1>Your business.<br><span>Smarter. Simpler.</span></h1>
+  <p class="lead">Tell us what slows your business down. FlowPilot AI helps shape a website, customer tool or automation plan around what you actually need — without paying for features you don't.</p>
+  <div class="actions"><a class="btn" href="#builder">Build my project plan →</a><a class="btn alt" href="#services">Explore solutions</a></div>
+  <div class="pills"><span class="pill">Websites</span><span class="pill">Enquiry systems</span><span class="pill">Booking workflows</span><span class="pill">AI assistants</span><span class="pill">Admin automation</span></div>
+ </div>
+</section>
+<div class="offer"><div class="wrap offerin"><p>🚀 <strong>FOUNDING CUSTOMER OFFER:</strong> First 5 customers receive 50% off their first approved build.</p><a href="#builder">Get a sample quote →</a></div></div>
+<section id="services" class="wrap">
+ <div class="section-head"><div class="eyebrow">One partner, many possibilities</div><h2>Built around your business — not a one-size-fits-all package.</h2><p class="muted">Start with one useful improvement. Add more when it makes sense. Every project gets a clear scope and price before work begins.</p></div>
+ <div class="grid">
+  <article class="card"><div class="ico">🌐</div><h3>Websites & landing pages</h3><p>A clear online home for your business, services, opening times and contact enquiries.</p></article>
+  <article class="card"><div class="ico">📥</div><h3>Enquiry capture</h3><p>Collect customer requests in one organised place and notify the right person.</p></article>
+  <article class="card"><div class="ico">📅</div><h3>Booking workflows</h3><p>Make it easier for customers to request appointments and for your team to follow up.</p></article>
+  <article class="card"><div class="ico">🤖</div><h3>AI assistants</h3><p>Business-specific FAQ and response drafts, with human review for important answers.</p></article>
+  <article class="card"><div class="ico">🔁</div><h3>Admin automation</h3><p>Connect simple forms, spreadsheets, reminders and repeatable office tasks.</p></article>
+  <article class="card"><div class="ico">📊</div><h3>Custom business tools</h3><p>Simple trackers, quote-request tools and dashboards designed around a defined process.</p></article>
+ </div>
+</section>
+<section class="industries">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow">Different businesses, different needs</div><h2>From a one-person business to a growing team.</h2><p class="muted">Examples of who we can help. We assess each project individually rather than promising every feature for every industry.</p></div>
+  <div class="grid">
+   <div class="industry"><b>🔧 Trades & home services</b><span>Plumbers, electricians, roofers, cleaners and gardeners.</span></div>
+   <div class="industry"><b>💇 Beauty & appointments</b><span>Salons, barbers, studios and independent therapists.</span></div>
+   <div class="industry"><b>🏋️ Fitness & wellbeing</b><span>Personal trainers, gyms, coaches and tutors.</span></div>
+   <div class="industry"><b>🏡 Property services</b><span>Estate agents, letting agents and property managers.</span></div>
+   <div class="industry"><b>☕ Hospitality & retail</b><span>Cafés, restaurants, local shops and online sellers.</span></div>
+   <div class="industry"><b>💼 Professional services</b><span>Consultants, freelancers and small service firms.</span></div>
+  </div>
+ </div>
+</section>
+<section class="builder" id="builder">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow">Interactive project planner</div><h2>What would you like FlowPilot to help build?</h2><p class="muted">Answer a few questions to get an illustrative project plan and launch-offer estimate. This first version runs in your browser — no account, paid API or data upload required.</p></div>
+  <div class="builderbox">
+   <form class="formcard" id="projectForm">
+    <div class="field"><label for="biz">What kind of business do you run?</label><select id="biz"><option>Trades or home services</option><option>Beauty, salon or appointments</option><option>Fitness, coaching or tutoring</option><option>Property or estate agency</option><option>Hospitality or retail</option><option>Professional services</option><option>Online business</option><option>Other / idea stage</option></select></div>
+    <div class="field"><label for="size">How big is your team?</label><select id="size"><option>Just me</option><option>2–5 people</option><option>6–20 people</option><option>More than 20 people</option></select></div>
+    <div class="field"><label>What would you like built? (Choose any)</label><div class="choices">
+     <label class="choice"><input type="checkbox" name="feature" value="Website or landing page" data-price="100"> Website or landing page</label>
+     <label class="choice"><input type="checkbox" name="feature" value="Enquiry form and tracker" data-price="59"> Enquiry form and tracker</label>
+     <label class="choice"><input type="checkbox" name="feature" value="Automated email workflow" data-price="50"> Automated email workflow</label>
+     <label class="choice"><input type="checkbox" name="feature" value="Booking request workflow" data-price="85"> Booking request workflow</label>
+     <label class="choice"><input type="checkbox" name="feature" value="FAQ assistant content" data-price="75"> FAQ assistant content</label>
+     <label class="choice"><input type="checkbox" name="feature" value="Simple dashboard or report" data-price="120"> Simple dashboard or report</label>
+     <label class="choice"><input type="checkbox" name="feature" value="Quote or calculator tool" data-price="95"> Quote or calculator tool</label>
+     <label class="choice"><input type="checkbox" name="feature" value="Process mapping and admin plan" data-price="49"> Process mapping and admin plan</label>
+    </div></div>
+    <div class="field"><label for="budget">What budget range are you considering?</label><select id="budget"><option>Under £100</option><option>£100–£300</option><option>£300–£600</option><option>£600–£1,000</option><option>£1,000+</option><option>Not sure yet</option></select></div>
+    <div class="field"><label for="notes">Tell us what you want the finished solution to do</label><textarea id="notes" placeholder="Example: I want customers to request a quote and receive an acknowledgement email."></textarea></div>
+    <button class="btn" type="submit">Generate my sample plan →</button>
+    <p class="fine">Prototype estimator only. It does not use a live AI model, send your answers or create an order.</p>
+   </form>
+   <aside class="card result" id="result" aria-live="polite">
+    <span class="tag">YOUR PROJECT PREVIEW</span>
+    <h3 style="margin-top:15px">Your plan will appear here.</h3>
+    <p class="muted">Choose one or more features and select “Generate my sample plan”.</p>
+    <div class="line"></div><p class="fine">The estimate is illustrative, not a binding quote.</p>
+   </aside>
+  </div>
+ </div>
+</section>
+<section id="how" class="wrap">
+ <div class="section-head"><div class="eyebrow">Simple, transparent process</div><h2>From idea to working solution.</h2><p class="muted">We keep a person involved at every important stage. You approve the scope, price and final result.</p></div>
+ <div class="steps">
+  <div class="step"><div class="num">1</div><h3>Tell us the problem</h3><p class="muted">Explain what takes time or what you'd like to improve.</p></div>
+  <div class="step"><div class="num">2</div><h3>Get a project plan</h3><p class="muted">We define features, complexity, limits and costs.</p></div>
+  <div class="step"><div class="num">3</div><h3>Approve the quote</h3><p class="muted">Nothing is charged or built until you agree.</p></div>
+  <div class="step"><div class="num">4</div><h3>Build, test, hand over</h3><p class="muted">We test with sample data and explain how to use it.</p></div>
+ </div>
+</section>
+<section id="pricing" style="background:#0a1929">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow">Illustrative starting prices</div><h2>Pay for the work you actually need.</h2><p class="muted">Final prices depend on agreed scope, testing, integrations and support. Third-party charges are always disclosed separately.</p></div>
+  <div class="pricing">
+   <article class="card"><h3>Mini project</h3><div class="price">£49–£99</div><p class="muted">One small task or simple tool.</p><ul class="muted"><li>One form or tracker</li><li>Simple workflow plan</li><li>Basic handover</li></ul><p class="fine">Example scope, not a guaranteed package.</p></article>
+   <article class="card highlight"><span class="tag">POPULAR STARTING POINT</span><h3 style="margin-top:12px">Business project</h3><div class="price">£149–£349</div><p class="muted">A small website or connected workflow.</p><ul class="muted"><li>Several defined features</li><li>Testing and revisions</li><li>Setup guidance</li></ul><p class="fine">Example scope, not a guaranteed package.</p></article>
+   <article class="card"><h3>Custom project</h3><div class="price">From £399</div><p class="muted">For more complex requirements.</p><ul class="muted"><li>Multiple workflows</li><li>Integrations assessed individually</li><li>Written delivery plan</li></ul><p class="fine">Quoted after technical review.</p></article>
+  </div>
+  <div class="notice" style="margin-top:18px"><b>Founding customer offer:</b> First five eligible customers receive 50% off the agreed first build labour price. Any external software, hosting, messaging, API or payment fees are excluded and must be approved separately. Offer subject to availability and written confirmation.</div>
+ </div>
+</section>
+<section class="wrap faq">
+ <div class="section-head"><div class="eyebrow">Good to know</div><h2>Questions people might ask.</h2></div>
+ <details><summary>Is FlowPilot AI a fully automated AI platform already?</summary><p>No. This website is an early-stage prototype. The project planner uses transparent built-in pricing rules. A real AI-powered builder and automatic deployment system would be developed and tested in later stages.</p></details>
+ <details><summary>Does the project planner send or save my answers?</summary><p>No. This demo calculates the estimate in your browser. It does not upload the information to a server or store it in a database.</p></details>
+ <details><summary>Will everything be free?</summary><p>The starter website and demo can be hosted using free services, subject to their terms and limits. Customer-specific hosting, domains, AI usage, email, SMS and integrations may cost money. These must be agreed before work starts.</p></details>
+ <details><summary>Can you build for any type of business?</summary><p>We can assess requests from many industries. We only accept work we can deliver safely and competently, and we may decline regulated, high-risk or unsupported requirements.</p></details>
+ <details><summary>How does the half-price offer work?</summary><p>The offer is intended for the first five eligible customers and applies to the agreed first build labour price only. Ongoing and third-party costs are not discounted unless expressly agreed in writing.</p></details>
+</section>
+<section id="contact" style="background:#0a1929">
+ <div class="wrap contact">
+  <div><div class="eyebrow">Start with a conversation</div><h2>Have an idea? Let's explore it.</h2><p class="muted">Tell us what you want to improve. We'll review whether it's practical, explain the likely costs and agree the next step.</p><p class="muted"><b>FlowPilot AI</b><br>Durham, England<br><span class="fine">Replace the email placeholder before publishing.</span></p></div>
+  <form class="formcard" id="contactForm">
+   <div class="field"><label for="cname">Your name</label><input id="cname" required placeholder="Your name"></div>
+   <div class="field"><label for="cemail">Your email</label><input id="cemail" type="email" required placeholder="you@example.com"></div>
+   <div class="field"><label for="cbiz">Business / idea</label><input id="cbiz" placeholder="What is your business?"></div>
+   <div class="field"><label for="cmessage">What would you like help with?</label><textarea id="cmessage" required placeholder="Tell us a little about your idea..."></textarea></div>
+   <button class="btn" type="submit">Prepare enquiry email →</button>
+   <p class="fine">This demo opens your email application. It does not transmit details by itself. Replace hello@YOURDOMAIN.example in the code with an email you control.</p>
+  </form>
+ </div>
+</section>
+</main>
+<footer class="footer"><div class="wrap footerin"><div><b>FLOWPILOT AI</b> · Your business. Smarter. Simpler.</div><div>Durham, England · Early-stage business concept</div><div>© <span id="year"></span> FlowPilot AI</div></div></footer>
+<script>
+const EMAIL='hello@YOURDOMAIN.example'; // Replace this with an email address you control before publishing.
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('menu').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));
+document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+document.getElementById('projectForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const selected=[...document.querySelectorAll('input[name="feature"]:checked')];
+ const result=document.getElementById('result');
+ if(!selected.length){result.innerHTML='<span class="tag">ONE MORE STEP</span><h3 style="margin-top:15px">Choose at least one feature.</h3><p class="muted">Select the part of your business you would like help with.</p>';return;}
+ const base=selected.reduce((n,x)=>n+Number(x.dataset.price),0);
+ const complexity=selected.length<=1?'Simple':selected.length<=3?'Medium':'Complex';
+ const subtotal=Math.max(49,base);
+ const discount=Math.round(subtotal*.5*100)/100;
+ const biz=document.getElementById('biz').value;
+ const size=document.getElementById('size').value;
+ const budget=document.getElementById('budget').value;
+ const notes=document.getElementById('notes').value.trim();
+ const items=selected.map(x=>'<li>'+x.value+'</li>').join('');
+ result.innerHTML='<span class="tag">SAMPLE PROJECT PLAN</span><h3 style="margin-top:15px">'+biz+' solution</h3><p class="muted">Team: '+size+' · Complexity: '+complexity+'</p><div class="line"></div><small>Illustrative build estimate</small><div class="big">£'+subtotal.toFixed(2)+'</div><p class="muted">Founding offer estimate (50% off):</p><div class="big">£'+discount.toFixed(2)+'</div><p class="fine">Before any third-party costs. Not a binding quote.</p><div class="line"></div><b>Suggested features</b><ul>'+items+'</ul><div class="line"></div><b>Budget stated</b><p class="muted">'+budget+'</p><b>Next step</b><p class="muted">A human reviews the scope, checks feasibility and confirms the final quote and any ongoing costs before work starts.</p><button class="btn" id="emailPlan" type="button">Prepare this plan by email →</button><p class="fine">Your answers stay in this browser until you choose to prepare an email.</p>';
+ document.getElementById('emailPlan').addEventListener('click',()=>{
+  const body='FlowPilot AI sample project enquiry%0A%0ABusiness type: '+encodeURIComponent(biz)+'%0ATeam size: '+encodeURIComponent(size)+'%0AFeatures: '+encodeURIComponent(selected.map(x=>x.value).join(', '))+'%0AIllustrative full estimate: £'+subtotal.toFixed(2)+'%0AIllustrative half-price estimate: £'+discount.toFixed(2)+'%0ABudget: '+encodeURIComponent(budget)+'%0AExtra details: '+encodeURIComponent(notes);
+  window.location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('FlowPilot AI project enquiry')+'&body='+body;
+ });
+});
+document.getElementById('contactForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const val=id=>document.getElementById(id).value.trim();
+ const body='Name: '+val('cname')+'\nEmail: '+val('cemail')+'\nBusiness: '+val('cbiz')+'\nMessage: '+val('cmessage');
+ window.location.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('FlowPilot AI enquiry')+'&body='+encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
